@@ -1,39 +1,104 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        body{
+        body {
             background-color: #eeeee4;
         }
 
-        .container{
+        .container {
             background-color: #fff;
-            width: 600px;
+            width: 80%;
+            border: 1px solid gray;
+            margin: 0 auto;
+            padding: 10px;
         }
 
-        .brand-logo{
+        .receipt-header {
+            border-bottom: 1px dashed gray;
+        }
+
+        .brand-logo {
             width: 100px;
-            margin: 10px auto;
+            display: block;
+            margin: 5px auto;
         }
+
+        .brand-title {
+            text-align: center;
+
+        }
+
+        .brand-address {
+            text-align: end;
+        }
+
+        .brand-contact {
+            text-align: end;
+        }
+
+        .receipt-title {
+            text-align: center;
+            font-size: 30px;
+            margin: 40px 0;
+        }
+
+        .receipt-details {
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+        }
+
+        .receipt-key {
+            color: gray;
+        }
+
+        .receipt-value {
+            font-weight: bold;
+            border-bottom: 1px dashed gray;
+            width: 30%;
+        }
+
+
         /* Normal Devices  */
-    @media screen and (min-width: 601px) and (max-width: 768px){
-    }
+        @media screen and (min-width: 601px) and (max-width: 768px) {}
 
-    /* Tablets Devices  */
-    @media screen and (min-width: 769px) and (max-width: 992px){
-    }
+        /* Tablets Devices  */
+        @media screen and (min-width: 769px) and (max-width: 992px) {}
 
-    /* Large Devices  */
-    @media screen and (min-width: 993px) and (max-width: 1200px){
-    }
+        /* Large Devices  */
+        @media screen and (min-width: 993px) and (max-width: 1200px) {}
     </style>
 </head>
+
 <body>
     <div class="container">
-        <img src="logo.png" class="brand-logo">
-    </div>
+        <div class="receipt-header">
+            <img src="logo.png" class="brand-logo">
+            <h2 class="brand-title">TechTreasure</h2>
+            <p class="brand-address">2 Vishal-Nagar, <br />
+                Chitali Road, <br />
+                Rahata-423107</p>
+            <p class="brand-contact">+91-7666633708</p>
+        </div>
+
+        <div class="receipt-body">
+
+            <h3 class="receipt-title">Payment Receipt</h3>
+
+            <div class="receipt-details">
+
+                <div class="receipt-key">Receipt No.:</div>
+                <div class="receipt-value">123456789</div>
+
+            </div>
+        </div>
+
+        <div class="receipt-footer">
+        </div>
 </body>
+
 </html>
